@@ -5,26 +5,11 @@ body {
   }
   
 header {
-    display: flex; /* Usar Flexbox para el layout */
-    justify-content: space-between; /* Espacio entre los bloques */
-    align-items: center; /* Alinear verticalmente */
-    padding: 20px; /* Espaciado interno */
-    background-color: #404340; /* Color de fondo */
-    color: white; /* Color del texto */
+    background:dimgray;
+    padding: 2rem;
+    color: beige;
     grid-column: 1 / 4;
 }
-.header-title {
-    margin-bottom: 10px; 
-}
-.header-nav {
-    display: flex;
-}
-.header-nav a {
-    margin-left: 20px; 
-    color: white; 
-    text-decoration: none; 
-}
-
   main {
     background: rgb(134, 127, 124);
     grid-column: 1 / 3;
