@@ -27,6 +27,7 @@ main {
     justify-content: space-between;
     flex-direction: row;
     min-height: 500px;
+    max-width: 900px;
 }
 
 h1 {
@@ -68,4 +69,8 @@ nav a:hover {
 	nav ul li {
 		flex: 1 1 100%;
 	}
+}
+footer {
+    display: flex;
+    justify-content: center;
 }
