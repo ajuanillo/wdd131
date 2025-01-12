@@ -36,12 +36,13 @@ h1 {
 nav {
     display: flex;
 	background-color: #36454f;
-    height: 100%;
+    width: 100%;
 	margin: 0;
     justify-content:space-around ;
 }
 nav ul {
 	list-style-type: none;
+    width: 100%;
 }
 nav a {
 	display: block;
