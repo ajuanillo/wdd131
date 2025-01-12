@@ -29,7 +29,11 @@ main {
     min-height: 500px;
     max-width: 900px;
 }
-
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 h1 {
 	font-size: 2rem;
 }
