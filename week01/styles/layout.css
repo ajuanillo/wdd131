@@ -5,6 +5,8 @@ body {
   }
   
 header {
+    display: flex;
+    flex-direction: column;
     background:dimgray;
     padding: 2rem;
     color: beige;
