@@ -13,16 +13,16 @@ header {
 	background-color: #6a1093;
 	display: grid;
     color: #fff;
-    padding: 10px;
+    
 }
 
-header, main {
+header, main,footer {
     gap: 10px;
-}
-
-h1 {
-	font-size: 1rem;
+    padding: 10px;
     text-align: center;
+}
+main {
+    align-items: center;
 }
 nav ul {
 	list-style: none;
@@ -44,11 +44,14 @@ nav a:hover {
 	background-color: #eee;
 	color: #000;
 }
-/*
-.active {
-	color: yellow;
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-*/
+
 /* Larger Views ******************************/
 @media (min-width: 740px) {
 	header {
