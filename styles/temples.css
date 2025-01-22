@@ -5,32 +5,25 @@
 }
 
 body {
-	font-family: "Sansita", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 /* mobile **************************/
 header {
-	background-color: #bbb;
+	background-color: #6a1093;
 	display: grid;
-	grid-gap: 1rem;
-	padding: 1px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 30px #333;
+    color: #fff;
+    padding: 10px;
 }
 
-header,
-main {
-	margin: 0 auto;
+header, main {
+    gap: 10px;
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 1rem;
+    text-align: center;
 }
-
-nav {
-	background-color: #36454f;
-}
-
 nav ul {
 	list-style: none;
 	display: flex;
