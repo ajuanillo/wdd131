@@ -9,7 +9,7 @@ body {
 }
 
 /* mobile **************************/
-header {
+header,footer {
 	background-color: #6a1093;
 	display: grid;
     color: #fff;
@@ -22,7 +22,9 @@ header, main,footer {
     text-align: center;
 }
 main {
+    max-width: 800px;
     align-items: center;
+    margin: 0 auto;
 }
 nav ul {
 	list-style: none;
@@ -46,13 +48,15 @@ nav a:hover {
 }
 
 section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr)); 
+    gap: 20px;
+    place-items: center;
 }
-
+figure {
+    background-color:#fff;
+    }
+img { width: 100%; height: auto; margin: .5rem;}
 /* Larger Views ******************************/
 @media (min-width: 740px) {
 	header {
