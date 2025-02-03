@@ -1,11 +1,30 @@
 :root{
     --bacground-color:rgb(189, 124, 178);
+    --second-color:rgb(254, 226, 65);
 }
-.hero img {
-    width: 100%;
-    height: auto;
-  }
+
+body {
+	font-family: "Roboto", sans-serif;
+}
 
 header {
     background-color: var(--bacground-color);
+   /* width: 500px;*/
+    align-items: center;
+}
+main{
+    background-color: var(--second-color);
+   /* width: 500px;*/
+    align-items: center;
+    margin: 0 auto;
+    }
+
+.hero img {
+    width: 100%;
+    height: auto;
+    }
+
+@media (min-width: 540px) {
+	
+
 }
