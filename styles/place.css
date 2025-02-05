@@ -12,9 +12,8 @@
 }
 header, main, footer {
     display: grid;
-    max-width: 500px;
+    width: 500px;
     margin: 0 auto;
-    border: 2px solid #45109c;
 }
 header {
     background-color: var(--rojo-granate);
@@ -25,11 +24,24 @@ main {
     background-color: var(--amarillo-rampante);
     font-family: 'Roboto', sans-serif;
     gap:10px;
+    color: var(--rojo-granate);
    /* width: 500px;*/
 }
-
-footer {
+.dataconteiner {
+    padding: 1rem;
     justify-items: center;
+}
+.wheaterconteiner {
+    border-top: 1px solid var(--bugambilla) ;
+    padding: 1rem;
+    justify-items: center;
+}
+footer {
+    background-color: var(--celeste-cielo);
+    color: var(--white-text);
+    padding: 1rem;
+    justify-items: center;
+
 }
 .hero img {
     width: 100%;
@@ -41,5 +53,9 @@ footer {
 @media (min-width: 800px) {
 	header, main, footer{
         width: auto;
+        max-width: auto;
+    }
+    .wheaterconteiner {
+        border-top: none ;
     }
 }
