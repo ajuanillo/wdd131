@@ -1,7 +1,7 @@
 :root{
     --rojo-granate: #A50000;    /* Color principal cabecera */
     --amarillo-rampante: #FFC300; /* Acentos y detalles */
-    --celeste-cielo: #00A3E0;   /* Fondos y elementos secundarios */
+    --celeste-cielo: #f7f5d7;   /* Fondos y elementos secundarios */
     --bugambilla: #D5006D;      /* Puntos focales y llamados a acción */
     --white-text:white;
 }
@@ -19,12 +19,13 @@ header {
     background-color: var(--rojo-granate);
     justify-items: center;
     color: var(--white-text);
+    padding: 1rem;
 }
 main {
     background-color: var(--amarillo-rampante);
     font-family: 'Roboto', sans-serif;
     gap:10px;
-    color: var(--rojo-granate);
+    color: rgb(36, 36, 36);
    /* width: 500px;*/
 }
 .dataconteiner {
@@ -37,8 +38,8 @@ main {
     justify-items: center;
 }
 footer {
-    background-color: var(--celeste-cielo);
-    color: var(--white-text);
+    background-color: var(--rojo-granate);
+    color: var(--celeste-cielo);
     padding: 1rem;
     justify-items: center;
 
@@ -46,6 +47,7 @@ footer {
 .hero img {
     width: 100%;
     height: auto;
+    border-bottom: 150px;
     }
 .wheateremoji::after{
     content: "🌤";
@@ -58,4 +60,28 @@ footer {
     .wheaterconteiner {
         border-top: none ;
     }
+    .principal {
+        position: relative; 
+        width: 100%;       
+        height: 100%;     
+    }
+    
+    .dataconteiner {
+        position: absolute; 
+        top: 10px;         
+        left: 10px;        
+        background-color: var(--amarillo-rampante); 
+        padding: 20px;     
+        border-radius: 2%;
+    }
+    
+    .wheaterconteiner {
+        position: absolute; 
+        bottom: 10px;     
+        right: 10px;      
+        background-color: var(--amarillo-rampante); 
+        padding: 20px;     
+        border-radius: 2%;
+    }
+
 }

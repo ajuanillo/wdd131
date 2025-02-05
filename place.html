@@ -12,6 +12,7 @@
     <meta name="author" content="Alfredo Nestor Juanillo Mamani">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/wheater.js" defer></script>
 </head>
 <body>
     <header>
@@ -30,15 +31,27 @@
             Data
            </h2> 
            <div>
-            <p>Aqui van los datos de la ciudad</p>
+            <ul>
+                <li>Area: </li>
+                <li>Population: </li>
+                <li>Capital: </li>
+                <li>Languages: Spanish, Aymara</li>
+                <li>Currency: </li>
+                <li>Time Zone: GMT -5</li>
+                <li>Calling Code: +51</li>
+                <li>Internet TLD: </li>
+            </ul>
            </div>
         </div>
        <div class="wheaterconteiner">
-           <h2 class="wheateremoji">
-            Weather
-           </h2> 
+           <h2 class="wheateremoji">Wheater</h2> 
            <div>
-            <p>aqui van los datos del clima</p>
+            <ul>
+                <li id="temperature">Temperature: </li>
+                <li>Condition: </li>
+                <li id="windSpeed">Wind: </li>
+                <li id="windChill">Wind Chill: </li>
+            </ul>
            </div>
        </div>
     </main>
