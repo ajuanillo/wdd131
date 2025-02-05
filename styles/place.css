@@ -12,19 +12,19 @@
 }
 header, main, footer {
     display: grid;
-    width: 500px;
+    max-width: 500px;
     margin: 0 auto;
     border: 2px solid #45109c;
 }
 header {
     background-color: var(--rojo-granate);
-    width: 500px;
     justify-items: center;
     color: var(--white-text);
 }
 main {
     background-color: var(--amarillo-rampante);
     font-family: 'Roboto', sans-serif;
+    gap:10px;
    /* width: 500px;*/
 }
 
