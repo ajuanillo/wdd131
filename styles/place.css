@@ -32,6 +32,12 @@ main {
     padding: 1rem;
     justify-items: center;
 }
+.weather-icon {
+    width: 200px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción */
+    margin-bottom: 10px; /* Espacio debajo del icono */
+}
+
 .wheaterconteiner {
     border-top: 1px solid var(--bugambilla) ;
     padding: 1rem;
@@ -49,13 +55,17 @@ footer {
     height: auto;
     border-bottom: 150px;
     }
-.wheateremoji::after{
-    content: "🌤";
-}
+
 @media (min-width: 800px) {
 	header, main, footer{
         width: auto;
         max-width: auto;
+    }
+    .weather-icon {
+        display: none;
+    }
+    .wheateremoji::after{
+        content: "🌤";
     }
     .wheaterconteiner {
         border-top: none ;
