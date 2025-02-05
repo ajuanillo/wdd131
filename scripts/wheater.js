@@ -1,4 +1,4 @@
-const temperature = 5; // Temp en °C
+const temperature = 25; // Temp en °C
 const windSpeed = 6; // Velocidad del viento en km/h
 
 
