@@ -56,10 +56,9 @@ footer {
     border-bottom: 150px;
     }
 
-@media (min-width: 800px) {
+@media (min-width: 550px) {
 	header, main, footer{
         width: auto;
-        max-width: auto;
     }
     .weather-icon {
         display: none;
