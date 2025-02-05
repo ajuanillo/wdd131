@@ -1,30 +1,43 @@
 :root{
-    --bacground-color:rgb(189, 124, 178);
-    --second-color:rgb(254, 226, 65);
+    --rojo-granate: #A50000;    /* Color principal cabecera */
+    --amarillo-rampante: #FFC300; /* Acentos y detalles */
+    --celeste-cielo: #00A3E0;   /* Fondos y elementos secundarios */
+    --bugambilla: #D5006D;      /* Puntos focales y llamados a acción */
+    --white-text:white;
 }
-
-body {
-	font-family: "Roboto", sans-serif;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-
-header {
-    background-color: var(--bacground-color);
-   /* width: 500px;*/
-    align-items: center;
-}
-main{
-    background-color: var(--second-color);
-   /* width: 500px;*/
-    align-items: center;
+header, main, footer {
+    display: grid;
+    width: 500px;
     margin: 0 auto;
-    }
+    border: 2px solid #45109c;
+}
+header {
+    background-color: var(--rojo-granate);
+    width: 500px;
+    justify-items: center;
+    color: var(--white-text);
+}
+main {
+    background-color: var(--amarillo-rampante);
+    font-family: 'Roboto', sans-serif;
+   /* width: 500px;*/
+}
 
+footer {
+    justify-items: center;
+}
 .hero img {
     width: 100%;
     height: auto;
     }
 
-@media (min-width: 540px) {
-	
-
+@media (min-width: 800px) {
+	header, main, footer{
+        width: auto;
+    }
 }
