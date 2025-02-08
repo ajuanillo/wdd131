@@ -75,9 +75,229 @@ const temples = [
 	  {
 		templeName: "Cusco Peru Temple",
 		location: "Cusco, Peru",
-		dedicated: "",
+		dedicated: "2022, October, 4",
 		area: 10000,
 		imageUrl:
 		"https://churchofjesuschristtemples.org/assets/img/temples/cusco-peru-temple/cusco-peru-temple-44681.jpg"
 	  },
   ];
+  /*
+	Loop through the array and create "temple cards" for each temple by displaying:
+	The name of the temple.
+	The location of the temple.
+	The date the temple was dedicated.
+	The total area of the temple in square feet.
+	The provided image of the temple (an absolute address), making sure to include an appropriate alt value such as the name of the temple.
+	Use native lazy loading for each temple image. 
+  */
+  const container = document.querySelector('.temples');
+  temples.forEach(temple => {
+	const card = document.createElement('div');
+	card.classList.add('temple-card');
+  
+	const name = document.createElement('h2');
+	name.textContent = temple.templeName;
+  
+	const location = document.createElement('p');
+	location.textContent = `Location: ${temple.location}`;
+  
+	const dedicated = document.createElement('p');
+	dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+  
+	const area = document.createElement('p');
+	area.textContent = `Area: ${temple.area} sq ft`;
+  
+	const image = document.createElement('img');
+	image.setAttribute('src', temple.imageUrl);
+	image.setAttribute('alt', temple.templeName);
+	image.setAttribute('loading', 'lazy');
+  
+	card.appendChild(name);
+	card.appendChild(location);
+	card.appendChild(dedicated);
+	card.appendChild(area);
+	card.appendChild(image);
+  
+	container.appendChild(card);
+  });
+  /*
+	Respond to the main navigation menu items by filtering and displaying the temples as follows:
+	Old – temples built before 1900
+	New – temples built after 2000
+	Large – temples larger than 90,000 square feet
+	Small – temples smaller than 10,000 square feet
+	Home – displays all the temples stored in the array. 
+  */
+  const oldButton = document.querySelector('#old');
+  const newButton = document.querySelector('#new');
+  const largeButton = document.querySelector('#large');
+  const smallButton = document.querySelector('#small');
+  const homeButton = document.querySelector('#home');	
+  oldButton.addEventListener('click', () => {
+	temples.filter(temple => {
+	  const dedicatedYear = parseInt(temple.dedicated.split(',')[0]);
+	  return dedicatedYear < 1900;
+	}).forEach(temple => {
+	  const card = document.createElement('div');
+	  card.classList.add('temple-card');
+
+	  const name = document.createElement('h2');
+	  name.textContent = temple.templeName;
+
+	  const location = document.createElement('p');
+	  location.textContent = `Location: ${temple.location}`;
+
+	  const dedicated = document.createElement('p');
+	  dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+
+	  const area = document.createElement('p');
+	  area.textContent = `Area: ${temple.area} sq ft`;
+
+	  const image = document.createElement('img');
+	  image.setAttribute('src', temple.imageUrl);
+	  image.setAttribute('alt', temple.templeName);
+	  image.setAttribute('loading', 'lazy');
+
+	  card.appendChild(name);
+	  card.appendChild(location);
+	  card.appendChild(dedicated);
+	  card.appendChild(area);
+	  card.appendChild(image);
+
+	  container.innerHTML = '';
+	  container.appendChild(card);
+	});
+  });
+  newButton.addEventListener('click', () => {
+	temples.filter(temple => {
+	  const dedicatedYear = parseInt(temple.dedicated.split(', ')[0]);
+	  return dedicatedYear > 2000;
+	}).forEach(temple => {
+	  const card = document.createElement('div');
+	  card.classList.add('temple-card');
+
+	  const name = document.createElement('h2');
+	  name.textContent = temple.templeName;
+
+	  const location = document.createElement('p');
+	  location.textContent = `Location: ${temple.location}`;
+
+	  const dedicated = document.createElement('p');
+	  dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+
+	  const area = document.createElement('p');
+	  area.textContent = `Area: ${temple.area} sq ft`;
+
+	  const image = document.createElement('img');
+	  image.setAttribute('src', temple.imageUrl);
+	  image.setAttribute('alt', temple.templeName);
+	  image.setAttribute('loading', 'lazy');
+
+	  card.appendChild(name);
+	  card.appendChild(location);
+	  card.appendChild(dedicated);
+	  card.appendChild(area);
+	  card.appendChild(image);
+
+	  container.innerHTML = '';
+	  container.appendChild(card);
+	});
+  });
+  largeButton.addEventListener('click', () => {
+	temples.filter(temple => temple.area > 90000).forEach(temple => {
+	  const card = document.createElement('div');
+	  card.classList.add('temple-card');
+
+	  const name = document.createElement('h2');
+	  name.textContent = temple.templeName;
+
+	  const location = document.createElement('p');
+	  location.textContent = `Location: ${temple.location}`;
+
+	  const dedicated = document.createElement('p');
+	  dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+
+	  const area = document.createElement('p');
+	  area.textContent = `Area: ${temple.area} sq ft`;
+
+	  const image = document.createElement('img');
+	  image.setAttribute('src', temple.imageUrl);
+	  image.setAttribute('alt', temple.templeName);
+	  image.setAttribute('loading', 'lazy');
+
+	  card.appendChild(name);
+	  card.appendChild(location);
+	  card.appendChild(dedicated);
+	  card.appendChild(area);
+	  card.appendChild(image);
+
+	  container.innerHTML = '';
+	  container.appendChild(card);
+	});
+  });
+  smallButton.addEventListener('click', () => {
+	temples.filter(temple => temple.area < 10000).forEach(temple => {
+	  const card = document.createElement('div');
+	  card.classList.add('temple-card');
+
+	  const name = document.createElement('h2');
+	  name.textContent = temple.templeName;
+
+	  const location = document.createElement('p');
+	  location.textContent = `Location: ${temple.location}`;
+
+	  const dedicated = document.createElement('p');
+	  dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+
+	  const area = document.createElement('p');
+	  area.textContent = `Area: ${temple.area} sq ft`;
+
+	  const image = document.createElement('img');
+	  image.setAttribute('src', temple.imageUrl);
+	  image.setAttribute('alt', temple.templeName);
+	  image.setAttribute('loading', 'lazy');
+
+	  card.appendChild(name);
+	  card.appendChild(location);
+	  card.appendChild(dedicated);
+	  card.appendChild(area);
+	  card.appendChild(image);
+
+	  container.innerHTML = '';
+	  container.appendChild(card);
+	});
+  });
+  homeButton.addEventListener('click', () => {
+	container.innerHTML = '';
+	temples.forEach(temple => {
+	  const card = document.createElement('div');
+	  card.classList.add('temple-card');
+
+	  const name = document.createElement('h2');
+	  name.textContent = temple.templeName;
+
+	  const location = document.createElement('p');
+	  location.textContent = `Location: ${temple.location}`;
+
+	  const dedicated = document.createElement('p');
+	  dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+
+	  const area = document.createElement('p');
+	  area.textContent = `Area: ${temple.area} sq ft`;
+
+	  const image = document.createElement('img');
+	  image.setAttribute('src', temple.imageUrl);
+	  image.setAttribute('alt', temple.templeName);
+	  image.setAttribute('loading', 'lazy');
+
+	  card.appendChild(name);
+	  card.appendChild(location);
+	  card.appendChild(dedicated);
+	  card.appendChild(area);
+	  card.appendChild(image);
+
+	  container.appendChild(card);
+	});
+  });
+
+

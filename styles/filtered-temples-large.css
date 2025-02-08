@@ -20,4 +20,10 @@
     #menu {
 		display: none;
 	}
+    .temple-card {
+        background-color: rgb(229, 226, 226);
+    }
+    .temple-card img {
+        justify-content: center;
+    }
 }
