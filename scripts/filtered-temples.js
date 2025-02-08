@@ -95,7 +95,7 @@ const temples = [
 	const card = document.createElement('div');
 	card.classList.add('temple-card');
   
-	const name = document.createElement('h2');
+	const name = document.createElement('h3');
 	name.textContent = temple.templeName;
   
 	const location = document.createElement('p');
@@ -141,7 +141,7 @@ const temples = [
 	  const card = document.createElement('div');
 	  card.classList.add('temple-card');
 
-	  const name = document.createElement('h2');
+	  const name = document.createElement('h3');
 	  name.textContent = temple.templeName;
 
 	  const location = document.createElement('p');
@@ -176,7 +176,7 @@ const temples = [
 	  const card = document.createElement('div');
 	  card.classList.add('temple-card');
 
-	  const name = document.createElement('h2');
+	  const name = document.createElement('h3');
 	  name.textContent = temple.templeName;
 
 	  const location = document.createElement('p');
@@ -208,7 +208,7 @@ const temples = [
 	  const card = document.createElement('div');
 	  card.classList.add('temple-card');
 
-	  const name = document.createElement('h2');
+	  const name = document.createElement('h3');
 	  name.textContent = temple.templeName;
 
 	  const location = document.createElement('p');
@@ -240,7 +240,7 @@ const temples = [
 	  const card = document.createElement('div');
 	  card.classList.add('temple-card');
 
-	  const name = document.createElement('h2');
+	  const name = document.createElement('h3');
 	  name.textContent = temple.templeName;
 
 	  const location = document.createElement('p');
@@ -273,7 +273,7 @@ const temples = [
 	  const card = document.createElement('div');
 	  card.classList.add('temple-card');
 
-	  const name = document.createElement('h2');
+	  const name = document.createElement('h3');
 	  name.textContent = temple.templeName;
 
 	  const location = document.createElement('p');
