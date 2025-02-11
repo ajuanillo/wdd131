@@ -63,23 +63,23 @@ const temples = [
 		area: 32000,
 		imageUrl:
 		"https://churchofjesuschristtemples.org/assets/img/temples/arequipa-peru-temple/arequipa-peru-temple-7186-main.jpg"
-	  },
-	  {
-		templeName: "Dallas Texas Temple",
-		location: "Dallas, Texas",
-		dedicated: "1984, October, 24",
-		area: 24000,
-		imageUrl:
-		"https://churchofjesuschristtemples.org/assets/img/temples/dallas-texas-temple/dallas-texas-temple-55221.jpg"
-	  },
-	  {
-		templeName: "Cusco Peru Temple",
-		location: "Cusco, Peru",
-		dedicated: "2022, October, 4",
-		area: 10000,
-		imageUrl:
-		"https://churchofjesuschristtemples.org/assets/img/temples/cusco-peru-temple/cusco-peru-temple-44681.jpg"
-	  },
+	},
+	{
+	templeName: "Dallas Texas Temple",
+	location: "Dallas, Texas",
+	dedicated: "1984, October, 24",
+	area: 24000,
+	imageUrl:
+	"https://churchofjesuschristtemples.org/assets/img/temples/dallas-texas-temple/dallas-texas-temple-55221.jpg"
+	},
+	{
+	templeName: "Cusco Peru Temple",
+	location: "Cusco, Peru",
+	dedicated: "2022, October, 4",
+	area: 10000,
+	imageUrl:
+	"https://churchofjesuschristtemples.org/assets/img/temples/cusco-peru-temple/cusco-peru-temple-44681.jpg"
+	},
   ];
   /*
 	Loop through the array and create "temple cards" for each temple by displaying:
@@ -90,7 +90,8 @@ const temples = [
 	The provided image of the temple (an absolute address), making sure to include an appropriate alt value such as the name of the temple.
 	Use native lazy loading for each temple image. 
   */
-  const container = document.querySelector('.temples');
+  const container = document.querySelector('.temples'); // Select space on temples class
+  
   temples.forEach(temple => {
 	const card = document.createElement('div');
 	card.classList.add('temple-card');

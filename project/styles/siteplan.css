@@ -1,0 +1,38 @@
+:root{
+    --rojo-granate: #A50000;    /* Color principal cabecera */
+    --amarillo-rampante: #FFC300; /* Acentos y detalles */
+    --celeste-cielo: #f7f5d7;   /* Fondos y elementos secundarios */
+    --bugambilla: #D5006D;      /* Puntos focales y llamados a acción */
+    --white-text:white;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header, body, p {
+	font-family: "Roboto", sans-serif;
+}
+header {
+    background-color: var(--rojo-granate);
+    justify-items: center;
+    color: var(--white-text);
+    padding: 1rem;
+}
+main   {
+    display: grid;
+    gap: 10px;
+    padding: 10px 15px;
+}
+section {
+    background-color: antiquewhite;
+    padding: 10px;
+    border: 1px solid var(--amarillo-rampante);
+}
+footer {
+    background-color: var(--rojo-granate);
+    color: var(--celeste-cielo);
+    padding: 1rem;
+    justify-items: center;
+}
