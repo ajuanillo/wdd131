@@ -27,14 +27,14 @@ header, main, footer {
     margin: 0 auto;
 }
 header {
-    background-color: var(--rojo-granate);
+    background-color: var(--color-background);
     justify-items: center;
-    color: var(--white-text);
+    color: var(--color-text-primary);
     padding: 1rem;
 }
 main {
-    background-color: var(--amarillo-rampante);
-    color: rgb(36, 36, 36);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 20px;
@@ -68,13 +68,13 @@ input[type="submit"] {
     border: none; 
     border-radius: 5px; 
     font-size: 16px;
-    background-color: var(--celeste-cielo);
-    color: var(--rojo-granate);
+    background-color: var(--color-text-primary);
+    color: var(--color-background);
 }
 
 input[type="submit"]:hover {
-    background-color:var(--rojo-granate); 
-    color: white;
+    background-color:var(--bugambilla); 
+    color: var(--color-background);
 }
 
 footer {

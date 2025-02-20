@@ -1,28 +1,23 @@
-const productos = [
+const products = [
   {
     id: "vw-1001",
-    nombre: "Cabernet Sauvignon",
-    promedioCalificacion: 4.8
+    name: "Cabernet Sauvignon"
   },
   {
     id: "vw-1002",
-    nombre: "Chardonnay",
-    promedioCalificacion: 4.6
+    name: "Chardonnay"
   },
   {
     id: "vw-1003",
-    nombre: "Merlot",
-    promedioCalificacion: 4.2
+    name: "Merlot"
   },
   {
     id: "vw-1004",
-    nombre: "Malbec",
-    promedioCalificacion: 4.7
+    name: "Malbec"
   },
   {
     id: "vw-1005",
-    nombre: "Sauvignon Blanc",
-    promedioCalificacion: 4.5
+    name: "Sauvignon Blanc"
   }
 ];
 

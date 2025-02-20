@@ -1,43 +1,62 @@
 const products = [
 	{
-	  templeName: "Aba Nigeria",
-	  location: "Aba, Nigeria",
-	  dedicated: "2005, August, 7",
-	  area: 11500,
+	  productName: "Cabernet Sauvignon",
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+	  "https://cdn.pixabay.com/photo/2015/11/05/19/54/rose-1024710_1280.jpg"
 	},
 	{
-	  templeName: "Manti Utah",
-	  location: "Manti, Utah, United States",
-	  dedicated: "1888, May, 21",
-	  area: 74792,
+	  productName: "Chardonnay",
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+	  "https://media.istockphoto.com/id/924149522/photo/close-up-of-wine-bottles-on-a-shelf-at-a-winery.jpg?s=612x612&w=is&k=20&c=DUeWRBryEncsETCnJUB9FhGW0EpPKk0tJLiPNotKsD8="
 	},
 	{
-	  templeName: "Payson Utah",
-	  location: "Payson, Utah, United States",
-	  dedicated: "2015, June, 7",
-	  area: 96630,
+	  productName: "Merlot",
 	  imageUrl:
-	  "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
-	}
+	  "https://media.istockphoto.com/id/1297234084/photo/two-red-wineglasses-on-rustic-wooden-table.jpg?s=612x612&w=is&k=20&c=GYxVwm2mfhNOcnsbel3_1suQFPczI0T_VOAAf7-i1OM="
+	},
+      {
+        productName: "Malbec",
+        imageUrl:"https://cdn.pixabay.com/photo/2018/01/12/09/45/glass-3077869_1280.jpg"
+      },
+      {
+        productName: "Sauvignon Blanc",
+        imageUrl:"https://cdn.pixabay.com/photo/2016/10/22/20/34/wines-1761613_960_720.jpg"
+      }
   ];
 
   
   const container = document.querySelector('.sampleproducts'); 
-  
-  products.forEach(product => {
+  if (container != null ) {products.slice(0,3).forEach(product => {
 	const card = document.createElement('div');
 	card.classList.add('product-card');
   
 	const image = document.createElement('img');
 	image.setAttribute('src', product.imageUrl);
-	image.setAttribute('alt', product.templeName);
+	image.setAttribute('alt', product.productName);
 	image.setAttribute('loading', 'lazy');
   
 	card.appendChild(image);
   
 	container.appendChild(card);
   });
+  }
+  
+
+  {
+  const productsConteiner = document.querySelector('.products'); 
+  
+  if (productsConteiner !== null )
+  products.forEach(product => {
+	const card = document.createElement('div');
+	card.classList.add('product-card');
+  
+	const image = document.createElement('img');
+	image.setAttribute('src', product.imageUrl);
+	image.setAttribute('alt', product.productName);
+	image.setAttribute('loading', 'lazy');
+  
+	card.appendChild(image);
+  
+	productsConteiner.appendChild(card);
+  });
+}

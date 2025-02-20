@@ -10,25 +10,37 @@
     <title>WDD 131 - Santa Wine and Liquor Winery</title>
     <meta name="description" content="This name represents the activities carried out in the company. Tradition, quality, and the essence of the winemaking process.">
     <meta name="author" content="Alfredo Nestor Juanillo Mamani">
-    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/products.js" defer></script>
+    <script src="scripts/filtered-products.js" defer></script>
     <script src="scripts/wheater.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Tacna City</h1>
+        <h1>Santa Winery</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="site.html" id="home">Home</a></li>
+                <li><a href="about.html" id="about">About</a></li>
+                <li><a href="products.html" id="products">Products</a></li>
+                <li><a href="contact.html" id="contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main class="principal">
         <div class="hero">
             <picture>
-                <source media="(min-width: 1500px)" srcset="images/tacna-large.webp" width="1500" height="750">
-                <source media="(min-width: 1000px)" srcset="images/tacna-medium.webp" width="1000" height="500">
-                <img src="images/tacna-small.webp" alt="Tacna City" width="500" height="250">
+                <source media="(min-width: 1500px)" srcset="images/santa-large.webp" width="1500" height="750">
+                <source media="(min-width: 1000px)" srcset="images/santa-medium.webp" width="1000" height="500">
+                <img src="images/santa-small.webp" alt="Santa Winery" width="500" height="250">
             </picture>
         </div>
         <div class="dataconteiner">
            <h2>
-            Data
+            We are in Tacna
            </h2>
            
            <div>
@@ -45,7 +57,7 @@
            </div>
         </div>
        <div class="wheaterconteiner">
-           <h2 class="wheateremoji">Wheater</h2>
+           <h2 class="wheateremoji">Our wheater is</h2>
            <img src="images/weather_clouds_sun_sunny_icon.svg" alt="Wheater icon" class="weather-icon"> 
            <div>
             <ul>
