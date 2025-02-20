@@ -9,6 +9,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 header, main, footer {
     display: grid;
@@ -23,25 +24,14 @@ header {
 }
 main {
     background-color: var(--amarillo-rampante);
-    font-family: 'Roboto', sans-serif;
-    gap:10px;
-    color: rgb(36, 36, 36);
-   /* width: 500px;*/
-}
-.dataconteiner {
-    padding: 1rem;
-    justify-items: center;
-}
-.weather-icon {
-    width: 200px; /* Ajusta el tamaño según sea necesario */
-    height: auto; /* Mantiene la proporción */
-    margin-bottom: 10px; /* Espacio debajo del icono */
-}
 
-.wheaterconteiner {
-    border-top: 1px solid var(--bugambilla) ;
-    padding: 1rem;
-    justify-items: center;
+    color: rgb(36, 36, 36);
+    margin-top: 10px;
+    margin-bottom: 10px;
+form {
+    
+}
+    
 }
 footer {
     background-color: var(--rojo-granate);
@@ -50,8 +40,4 @@ footer {
     justify-items: center;
 
 }
-.hero img {
-    width: 100%;
-    height: auto;
-    border-bottom: 150px;
-}
+
