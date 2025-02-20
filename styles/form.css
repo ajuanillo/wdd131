@@ -27,7 +27,22 @@ main {
     color: rgb(36, 36, 36);
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 20px;
+ 
 }
+
+select,textarea {
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    display: block;
+    width: 100%;
+}
+fieldset {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 footer {
     background-color: var(--rojo-granate);
     color: var(--celeste-cielo);
