@@ -1,0 +1,87 @@
+:root{
+    /* Colors for project */
+    --color-background: #f8f8f8; /* Blanco Ahumado */
+    --color-background-secondary: #e0d092; /* Beige Claro */
+ 
+    --bugambilla: #d5006d;      /* Puntos focales y llamados a acción */
+    --color-accent-red: #c82333; /* Rojo Vino */
+
+    --color-text-primary: #464646; /* Gris Oscuro */
+    --color-accent-gold: #b8860b; /* Dorado */
+
+    /* Typography */
+    --font-family-headings: 'Montserrat', sans-serif;
+    --font-family-body: 'Open Sans', sans-serif;
+    /* Font weights */
+    --font-weight-headings: 700;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header, main, footer {
+    display: grid;
+    width: 500px;
+    margin: 0 auto;
+}
+header {
+    background-color: var(--rojo-granate);
+    justify-items: center;
+    color: var(--white-text);
+    padding: 1rem;
+}
+main {
+    background-color: var(--amarillo-rampante);
+    color: rgb(36, 36, 36);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+ 
+}
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+select,textarea {
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    display: block;
+    width: 100%;
+}
+fieldset {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="text"] {
+    width: 100%; 
+}
+input[type="submit"] {
+    width: 100%; 
+    margin-top: 20px;
+    padding: 12px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px;
+    background-color: var(--celeste-cielo);
+    color: var(--rojo-granate);
+}
+
+input[type="submit"]:hover {
+    background-color:var(--rojo-granate); 
+    color: white;
+}
+
+footer {
+    background-color: var(--rojo-granate);
+    color: var(--celeste-cielo);
+    padding: 1rem;
+    justify-items: center;
+
+}
+
