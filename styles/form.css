@@ -30,6 +30,12 @@ main {
     padding: 20px;
  
 }
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
 
 select,textarea {
     margin-top: 10px; 
@@ -41,6 +47,24 @@ fieldset {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+input[type="text"] {
+    width: 100%; 
+}
+input[type="submit"] {
+    width: 100%; 
+    margin-top: 20px;
+    padding: 12px; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px;
+    background-color: var(--celeste-cielo);
+    color: var(--rojo-granate);
+}
+
+input[type="submit"]:hover {
+    background-color:var(--rojo-granate); 
+    color: white;
 }
 
 footer {
